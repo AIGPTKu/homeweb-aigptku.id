@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Libre Baskervville", sans-serif;
+  font-weight: 300;
+  background-color: #10001b;
+}
+
+.chat-bubble {
+  /* word-spacing: 0.5rem; */
+  /* padding: 0px 0px; */
+  border-radius: 20px;
+  max-width: 75%;
+  margin-bottom: 20px;
+}
+
+.chat-bubble-user {
+  padding: 0 15px;
+  color: white;
+  align-self: flex-end;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+}
+
+.chat-bubble-bot {
+  color: white;
+  align-self: flex-start;
+  max-width: 100%;
+}
+
+Sample CSS styles styles.css .chat-bubble {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  max-width: 80%;
+}
+.chat-bubble-user {
+  background-color: #9c0097; /* User message color */
+  align-self: flex-end;
+}
+.chat-bubble-bot {
+  /* background-color: #9a0f98; */
+}
+
+.markdown {
+  font-size: 16px;
+  line-height: 2;
+  color: #ffffffb9;
+  margin: 0px 0px;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  line-height: 1.2;
+  font-weight: bold;
+  color: #ffffffde;
+  margin-top: 20px; /* Jarak atas yang lebih besar */
+  margin-bottom: 10px; /* Sesuaikan jarak bawah */
+}
+
+.markdown h1 {
+  font-size: 36px;
+}
+
+.markdown h2 {
+  font-size: 30px;
+}
+
+.markdown h3 {
+  font-size: 24px;
+}
+
+.markdown h4 {
+  font-size: 20px;
+}
+
+.markdown a {
+  color: #ff00ae;
+  font-weight: 400;
+}
+
+.markdown blockquote {
+  color: white;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid #ffffff2a;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.markdown th {
+  background-color: #cd00a4;
+  color: white;
+}
+
+.markdown tr:nth-child(even) {
+  /* background-color: #34004d; */
+}
+
+@media screen and (max-width: 768px) {
+  /* Gaya untuk layar dengan lebar minimum 600px */
+  .markdown {
+    font-size: 14px;
+  }
+
+  .markdown h1 {
+    font-size: 32px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  .markdown h3 {
+    font-size: 18px;
+  }
+
+  .markdown h4 {
+    font-size: 16px;
+  }
+}
+
+.markdown strong {
+  font-weight: 700;
+  color: #ffffffde;
+}
+
+.markdown p {
+  margin: 5px 0;
+}
+.markdown ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.markdown hr {
+  margin: 40px 0; /* Atur jarak atas dan bawah sesuai kebutuhan */
+  border: none; /* Hapus border default */
+  border-top: 1px solid #ffffff69; /* Tambahkan border */
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+.markdown code {
+  color: #ffffffdd;
+  /* background-color: #ffe8d9; */
+  /* padding: 2px 5px; */
+  line-height: 1.5rem;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.markdown blockquote {
+  border-left: 2px solid #ff00ae;
+  padding-left: 10px;
+  color: #ffffffdd;
+}
+
+.navbar {
+  z-index: 1;
+  box-sizing: "content-box";
+  box-shadow: 0px 10px 6px rgba(24, 0, 40, 0.5); /* 0px 5px 10px = offset, blur, spread */
+}
+
+.mdsend {
+  color: #ffffff;
+  transition: ease-out 300ms;
+}
+
+.mdsend:hover {
+  color: #b9008b;
+  /* transform: scale(1.5); */
+  transition: ease-in 300ms;
+}
+
+input {
+  /* background-color: #ffd7f0; */
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(228, 107, 232, 1) 11.2%,
+    rgba(87, 27, 226, 1) 96.7%
+  );
+  color: #ffffff;
+  transition: ease-out 300ms;
+  border: solid 1px #39065a;
+  outline: none;
+}
+
+input:hover,
+:focus {
+  transition: ease-in 300ms;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffffb2;
+}
+
+input::-moz-placeholder {
+  color: #ffffffb2;
+}
+
+input::-ms-input-placeholder {
+  color: #ffffffb2;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffffb2;
+}
+
+input:-moz-placeholder {
+  color: #ffffffb2;
+}
+
+input::placeholder {
+  color: #ffffffb2;
+}
+
+.btncopy {
+  opacity: 0.5;
+  transition: ease-out 300ms;
+}
+
+.btncopy:hover {
+  opacity: 1;
+  transition: ease-in 300ms;
+}
+
+.room {
+  background-color: "";
+}
+
+.room:hover {
+  background-color: #7200c351;
+}
+
+.btnthree {
+  color: #484848;
+}
+
+.btnthree:hover {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: revert;
+  font-weight: revert;
+}
