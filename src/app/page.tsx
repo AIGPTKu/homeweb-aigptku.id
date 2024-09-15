@@ -1,9 +1,15 @@
-import { Suspense } from "react";
+"use client";
+import { useRouter } from "next/navigation";
+import { Suspense, useEffect } from "react";
 
 const Home: React.FC = ({ children }: any) => {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("https://chat.aigptku.id");
+  }, []);
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div
+      {/* <div
         style={{
           display: "flex",
           flexDirection: "column",
@@ -23,7 +29,7 @@ const Home: React.FC = ({ children }: any) => {
           }}
         />
         <h1>Soon!</h1>
-      </div>
+      </div> */}
     </Suspense>
   );
 };
